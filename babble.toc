@@ -1,0 +1,21 @@
+## Title: BG Babble
+## Notes: Quickly message your teammates in Battlegrounds
+## Author: Cao
+## Version: 1.0
+# Note: Interface value must match current WoW release. Run the below script in game to get correct value:
+# /run print((select(4, GetBuildInfo())));
+## Interface: 110002
+
+# Required for AceDB-3.0 helper addon. Name of the persistent database object
+## SavedVariables: BabbleDB
+
+# Helper addons
+libs\LibStub\LibStub.lua                            # Required for Ace3 addons
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml    # Required for Ace3 addons
+libs\AceAddon-3.0\AceAddon-3.0.xml                  # Base Ace3 addon. Creates OnInitialize(), OnEnable(), and OnDisable() functions
+libs\AceConsole-3.0\AceConsole-3.0.xml              # Used for Print() function and registering slash commands for in-game chat
+libs\AceDB-3.0\AceDB-3.0.xml                        # Used for data persistence when logging out or running /reload
+libs\AceEvent-3.0\AceEvent-3.0.xml                  # Used for registering handlers for in-game WoW API events
+libs\AceHook-3.0\AceHook-3.0.xml                    # Used for creating hooks to extend functionality of existing WoW functions
+
+babble.lua
