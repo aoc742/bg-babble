@@ -18,4 +18,5 @@ libs\AceDB-3.0\AceDB-3.0.xml                        # Used for data persistence 
 libs\AceEvent-3.0\AceEvent-3.0.xml                  # Used for registering handlers for in-game WoW API events
 libs\AceHook-3.0\AceHook-3.0.xml                    # Used for creating hooks to extend functionality of existing WoW functions
 
+events.lua
 babble.lua
